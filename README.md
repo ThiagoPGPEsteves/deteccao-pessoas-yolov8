@@ -1,6 +1,6 @@
 # Detecção de pessoas com YOLOv8
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ThiagoPGPEsteves/deteccao-pessoas-yolov8/blob/main/notebooks/deteccao_pessoas_yolov8.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ThiagoPGPEsteves/deteccao-pessoas-yolov8/blob/main/deteccao_pessoas_yolov8.ipynb)
 
 Detector de pessoas treinado com **transfer learning** a partir do YOLOv8n (pesos COCO), usando um dataset próprio anotado no Roboflow. O notebook cobre o ciclo completo: download dos dados, análise exploratória, comparação de filtros de pré-processamento, treino, avaliação no conjunto de teste e inferência em imagens novas.
 
@@ -35,11 +35,11 @@ Anotado no Roboflow e exportado no formato YOLOv8. O dataset não fica neste rep
 
 ## Gráficos
 
-![Análise exploratória do dataset](images/eda_dataset.png)
+![Análise exploratória do dataset](eda_dataset.png)
 
-![Comparação dos filtros de ruído](images/comparacao_denoising.png)
+![Comparação dos filtros de ruído](comparacao_denoising.png)
 
-![Curvas de treinamento](images/curvas_treinamento.png)
+![Curvas de treinamento](curvas_treinamento.png)
 
 ## Método
 
@@ -57,19 +57,17 @@ Localmente:
 
 ```bash
 pip install -r requirements.txt
-jupyter notebook notebooks/deteccao_pessoas_yolov8.ipynb
+jupyter notebook deteccao_pessoas_yolov8.ipynb
 ```
 
 ## Estrutura
 
 ```
 .
-├── notebooks/
-│   └── deteccao_pessoas_yolov8.ipynb   # notebook completo, com as saídas salvas
-├── images/                             # gráficos usados neste README
-│   ├── eda_dataset.png
-│   ├── comparacao_denoising.png
-│   └── curvas_treinamento.png
+├── deteccao_pessoas_yolov8.ipynb   # notebook completo, com as saídas salvas
+├── eda_dataset.png                 # gráficos usados neste README
+├── comparacao_denoising.png
+├── curvas_treinamento.png
 ├── requirements.txt
 └── README.md
 ```
