@@ -1,0 +1,15 @@
+# Dados e saídas pesadas (o dataset é baixado do Roboflow)
+Detec*/
+datasets/
+runs/
+*.pt
+*.cache
+
+# Segredos
+.env
+*.key
+
+# Ambiente
+.venv/
+__pycache__/
+.ipynb_checkpoints/
